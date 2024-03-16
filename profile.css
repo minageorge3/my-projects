@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#nav:checked+.side .title h1 span,
+#nav:checked+.side .list li a span {
+    display: none;
+}
+
+#nav:checked+.side {
+    width: 80px;
+}
+
+
+#nav:checked+.side .list li a {
+    text-align: center;
+    padding-left: 0rem;
+    margin-left: -1.5rem;
+}
+
+#nav:checked+.side .title h1 i {
+    text-align: center;
+    padding-left: 0rem;
+}
+
+#nav:checked~main {
+    margin-left: 80px;
+}
+
+#nav:checked~.main-content header {
+    left: 80px;
+    width: calc(100% - 80px);
+
+}
+
+.side .title {
+    height: 90px;
+    padding: 1rem 2rem 2rem 1rem;
+    color: #fff;
+}
+
+.side .title i {
+    display: inline-block;
+    padding: 1rem;
+    transition: .4s ease-in-out;
+}
+
+.side {
+
+    width: 300px;
+    height: 100%;
+    background-color: #a11462;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: .4s ease-in-out;
+}
+
+.side .list ul li {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+}
+
+.side .list ul li a {
+    display: block;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+.side .list ul li a span {
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+.list ul li a.active {
+    background-color: #fff;
+    color: #a11462;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0 0 30px;
+}
+
+
+.main-content {
+    margin-left: 300px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    box-shadow: 2px 2px 5px #0000003d;
+    position: fixed;
+    top: 0;
+    left: 300px;
+    height: 80px;
+    width: calc(100% - 300px);
+    transition: .4s ease-in-out;
+}
+
+header h1 {
+    color: #535353;
+}
+
+header label i {
+    padding-right: 1rem;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+header .search i {
+    display: inline-block;
+    padding: 0rem 2rem;
+    font-size: 1.3rem;
+}
+
+header .search input {
+    border: none;
+    height: 100%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.user p {
+    display: inline-block;
+    margin-top: .8rem;
+    text-align: center;
+}
+
+main {
+    margin-left: 300px;
+    margin-top: 88px;
+    min-height: calc(100vh - 88px);
+    background-color: #f0f0f0;
+    padding: 1.5rem 1rem;
+    transition: .4s ease-in-out;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.card i {
+    margin-right: 1.2rem;
+    color: #a11462;
+}
+
+.card p {
+    margin-top: 1.5rem;
+    color: #535353;
+}
+
+
+
+.last-menu {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 60% auto;
+    font-size: 1rem;
+}
+
+.l-menu {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.l-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+
+}
+
+.l-menu-header button {
+    background-color: #a11462;
+    color: #fff;
+    padding: .5rem 1rem;
+    border: 2px solid #a11462;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.l-menu-header button i {
+    margin-left: .7rem;
+}
+
+.big {
+    margin-left: 1rem;
+    background-color: #fff;
+
+}
+
+.last {
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+thead tr {
+    border-bottom: 2px solid #f0f0f0;
+    border-top: 2px solid #f0f0f0;
+}
+
+thead td {
+    font-weight: 1000;
+
+}
+
+
+
+td {
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.status {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.finally {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.finally1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finally i {
+    font-size: 1.5rem;
+}
+
+.finally1 h3 {
+    margin-bottom: .5rem;
+}
+
+@media only screen and (max-width:1200px) {
+
+    .side .title h1 span,
+    .side .list li a span {
+        display: none;
+    }
+
+    .side {
+        width: 80px;
+    }
+
+
+    .side .list li a {
+        text-align: center;
+        padding-left: 0rem;
+        margin-left: -1.5rem;
+    }
+
+    .side .title h1 i {
+        text-align: center;
+        padding-left: 0rem;
+    }
+
+    .side:hover {
+        width: 200px;
+        z-index: 200;
+    }
+
+    .side:hover .list li a span {
+        text-align: center;
+        padding-left: 0rem;
+        /* margin-left: -1.5rem; */
+        display: inline;
+        font-size: 1rem;
+    }
+
+    .side:hover .list li a {
+        text-align: left;
+    }
+
+    .side:hover .title h1 i {
+        text-align: center;
+        padding-left: 0rem;
+    }
+
+    .side:hover .title h1 span {
+        display: inline;
+        font-size: 1rem;
+    }
+
+    main {
+        margin-left: 80px;
+    }
+
+    .main-content header {
+        left: 80px;
+        width: calc(100% - 80px);
+
+    }
+}
+
+
+@media (max-width:900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last-menu {
+        grid-template-columns: 100%;
+    }
+
+    .main-content .search {
+        display: none;
+    }
+}
+
+@media (max-width:750px) {
+    .last-menu {
+        grid-template-columns: auto;
+
+    }
+
+    .cards,
+    main,
+    .card,
+    .main-content {
+        grid-template-columns: 37rem;
+
+    }
+
+    body {
+        background-color: #f0f0f0;
+    }
+
+}
+
+
+
+@media (max-width:654px) {
+    .main-content h1 span {
+        display: none;
+    }
+
+}
